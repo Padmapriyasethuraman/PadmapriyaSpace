@@ -1,132 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PadmapriyaSpace</title>
+    <title>PadmapriyaFolio</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Favicon -->
-    <link rel="icon" href="images/Padmapriya FOLIO.png" type="image/png">
+    <link rel="icon" href="images/Padmapriya FOLIO.png" type="image/x-png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFZ62PZ1CV"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DFZ62PZ1CV');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-DFZ62PZ1CV');
     </script>
-    <style>
-        /* Base styles for all screens */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-        }
-
-        header .left-icon img {
-            width: 50px;
-            height: auto;
-        }
-
-        .right-links ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        .right-links ul li {
-            margin: 0 15px;
-        }
-
-        .right-links ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .intro {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .about-text h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .about-text h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        .about-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        /* Layout for mobile screens */
-        @media screen and (max-width: 768px) {
-            .right-links ul {
-                flex-direction: column;
-                align-items: center;
-                padding: 0;
-            }
-
-            .right-links ul li {
-                margin: 10px 0;
-            }
-
-            .projects-gallery,
-            .certifications-gallery {
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .social-media {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .about-image img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        /* Layout for larger screens */
-        @media screen and (min-width: 769px) {
-            .projects-gallery,
-            .certifications-gallery {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-            }
-
-            .about-image img {
-                width: 300px;
-                height: auto;
-            }
-        }
-    </style>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="left-icon">
                 <img src="images/Padmapriya FOLIO.png" alt="Logo">
-                <span class="icon-text">PadmapriyaSpace</span>
+                <span class="icon-text">PadmapriyaFolio</span>
             </div>
             <div class="right-links">
                 <ul>
@@ -146,8 +45,8 @@
             <div class="about-text">
                 <h1>Hello !! I'm Padmapriya</h1>
                 <br>
-                <h2>"The best way to predict the future is to create it.  </h2>
-                <h2> Dream big, take action, and shape your destiny with determination, creativity, and perseverance."</h2>
+                <h2>"The best way to predict the future is to create it.</h2>
+                <h2>Dream big, take action, and shape your destiny with determination, creativity, and perseverance."</h2>
                 <br>
                 <br>
                 <button onclick="window.open('https://drive.google.com/file/d/1LWHyc-__bnBAb2BrD19knQlqAIeu6scD/view?usp=drive_link', '_blank')">View Resume</button>
@@ -157,21 +56,24 @@
             </div>
         </div>
     </section>
-    
+
     <section id="education">
         <h2>Education</h2>
         <div class="education-box">
             <h3>B.E. in Computer Science Engineering (2021-2025)</h3>
-            <p>Sethu Institute of Technology, Kariapatti (NAAC ACCREDITATION A++ GRADE)</p>
-            <p>CGPA: 8.45 (upto 4th semester)</p>
+            <br>
+            <p>Sethu Institute of Technology, Kariapatti (NAAC Accreditation A++ Grade)</p>
+            <p>CGPA: 8.45 (up to 4th semester)</p>
         </div>
         <div class="education-box">
             <h3>AISSCE (2020-2021)</h3>
+            <br>
             <p>Kendriya Vidyalaya, Sivaganga</p>
             <p>Percentage: 81%</p>
         </div>
         <div class="education-box">
             <h3>AISSE (2018-2019)</h3>
+            <br>
             <p>Kendriya Vidyalaya, Sivaganga</p>
             <p>Percentage: 78%</p>
         </div>
@@ -241,13 +143,13 @@
             <div class="project-item">
                 <a href="https://github.com/Padmapriyasethuraman/Customer-analysis-using-Tableau" target="_blank">
                     <img src="images/Customer analysis tableau.png" alt="Project 5">
-                    <p>Project 5: Customer Analysis with Tableau: "Conducted customer segmentation analysis using Tableau to identify key market segments and create targeted marketing strategies."</p>
+                    <p>Project 5: Customer Analysis with Tableau: "Conducted customer segmentation and analysis using Tableau to visualize and interpret data insights effectively."</p>
                 </a>
             </div>
             <div class="project-item">
-                <a href="https://github.com/Padmapriyasethuraman/SQL" target="_blank">
-                    <img src="images/sql.png" alt="Project 6">
-                    <p>Project 6: SQL Data Analysis: "Analyzed a retail store database using complex SQL queries to derive business insights and report on key performance indicators."</p>
+                <a href="https://github.com/Padmapriyasethuraman/ETL" target="_blank">
+                    <img src="images/ETL.png" alt="Project 6">
+                    <p>Project 6: ETL Pipeline for Currency and Expense Data: "Extracted, transformed, and loaded currency exchange rates and expense data into a SQL database."</p>
                 </a>
             </div>
         </div>
@@ -256,39 +158,58 @@
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="certifications-gallery">
-            <div class="certifications-item">
-                <img src="images/sqlcerti.jpeg" alt="SQL Certificate">
-                <p>Certificate 1: SQL Certification</p>
+            <div class="certification-item">
+                <a href="https://www.credly.com/badges/ef61ebea-482a-43b3-b82f-962ef278ce40/public_url" target="_blank">
+                    <img src="images/data analytics.png" alt="Certificate 1">
+                    <p>Certificate 1: Data Analytics Essentials | CISCO</p>
+                </a>
             </div>
-            <div class="certifications-item">
-                <img src="images/Tableau.jpg" alt="Tableau Certificate">
-                <p>Certificate 2: Tableau Certification</p>
+            <div class="certification-item">
+                <a href="https://www.credly.com/badges/97940ba1-373f-4bc3-a926-d0d296b8b24e/public_url" target="_blank">
+                    <img src="images/data science.png" alt="Certificate 2">
+                    <p>Certificate 2: Introduction to Data Science | CISCO</p>
+                </a>
             </div>
-            <div class="certifications-item">
-                <img src="images/dataviz.png" alt="Data Visualization Certificate">
-                <p>Certificate 3: Data Visualization Certification</p>
+            <div class="certification-item">
+                <a href="https://learn.microsoft.com/api/achievements/share/en-us/Padmapriyasethuraman-0214/PSJPTTX4?sharingId=6C8C27D0EB6EAFF4" target="_blank">
+                    <img src="images/microsoft.png" alt="Certificate 3" style="width: 360px; height: 360px;">
+                    <p>Certificate 3: Discover Data Analysis | Microsoft Learn</p>
+                </a>
             </div>
-            <div class="certifications-item">
-                <img src="images/pandas.png" alt="Pandas Certificate">
-               
-           
-           
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you have any questions or want to connect, feel free to reach out!</p>
-        <p>Email: padmapriyasethu2003@gmail.com</p>
-        <p>Location: Madurai, Tamil Nadu</p>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/padmapriya-sethuraman/" target="_blank">
-                <img src="images/Linkedin logo.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/Padmapriyasethuraman" target="_blank">
-                <img src="images/github.png" alt="GitHub">
-            </a>
-        </div>
+        <h2>Contact</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+            <input type="hidden" name="redirect" value="https://example.com/thank-you">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/Padmapriyasethuraman" target="_blank">
+                    <img src="images/githubimg.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/padmapriya-sethuraman/" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://blogger.blogspot.com" target="_blank">
+                    <img src="images/blog.png" alt="Blog">
+                </a>
+            </div>
+            <p>&copy; 2024 Padmapriya. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
