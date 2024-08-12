@@ -3,28 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PadmapriyaFolio</title>
+    <title>PadmapriyaSpace</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Favicon -->
-    <link rel="icon" href="C:\Users\Lenovo\Downloads\Padmapriya FOLIO.png" type="image/x-png">
-    <!-- Alternatively, if using PNG format -->
-    <!-- <link rel="icon" href="path/to/favicon.png" type="image/png"> -->
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFZ62PZ1CV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="icon" href="images/Padmapriya FOLIO.png" type="image/png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFZ62PZ1CV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DFZ62PZ1CV');
+    </script>
+    <style>
+        /* Base styles for all screens */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-  gtag('config', 'G-DFZ62PZ1CV');
-</script>
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        header .left-icon img {
+            width: 50px;
+            height: auto;
+        }
+
+        .right-links ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .right-links ul li {
+            margin: 0 15px;
+        }
+
+        .right-links ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .about-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-text h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /* Layout for mobile screens */
+        @media screen and (max-width: 768px) {
+            .right-links ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            .right-links ul li {
+                margin: 10px 0;
+            }
+
+            .projects-gallery,
+            .certifications-gallery {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .social-media {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .about-image img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Layout for larger screens */
+        @media screen and (min-width: 769px) {
+            .projects-gallery,
+            .certifications-gallery {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+            .about-image img {
+                width: 300px;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="left-icon">
-                <img src="C:\Users\Lenovo\Downloads\Padmapriya FOLIO.png" alt="Logo">
-                <span class="icon-text">PadmapriyaFolio</span>
+                <img src="images/Padmapriya FOLIO.png" alt="Logo">
+                <span class="icon-text">PadmapriyaSpace</span>
             </div>
             <div class="right-links">
                 <ul>
@@ -51,31 +153,26 @@
                 <button onclick="window.open('https://drive.google.com/file/d/1LWHyc-__bnBAb2BrD19knQlqAIeu6scD/view?usp=drive_link', '_blank')">View Resume</button>
             </div>
             <div class="about-image">
-                <img src="C:\Users\Lenovo\Downloads\priyaFolio.jpeg" alt="Profile Picture">
+                <img src="images/priyaFolio.jpeg" alt="Profile Picture">
             </div>
         </div>
     </section>
     
-
     <section id="education">
         <h2>Education</h2>
         <div class="education-box">
-            <h3>B.E. in Computer Science Engineering (2021-2025) </h3>
-            <br>
-            <p>Sethu Institute of Technology,Kariapatti (NAAC ACCREDITATION
-                A++ GRADE)</p>
-            <p>CGPA: 8.45(upto 4th semester)</p>
+            <h3>B.E. in Computer Science Engineering (2021-2025)</h3>
+            <p>Sethu Institute of Technology, Kariapatti (NAAC ACCREDITATION A++ GRADE)</p>
+            <p>CGPA: 8.45 (upto 4th semester)</p>
         </div>
         <div class="education-box">
             <h3>AISSCE (2020-2021)</h3>
-            <br>
-            <p>Kendriya Vidyalaya,Sivaganga</p>
+            <p>Kendriya Vidyalaya, Sivaganga</p>
             <p>Percentage: 81%</p>
         </div>
         <div class="education-box">
             <h3>AISSE (2018-2019)</h3>
-            <br>
-            <p>Kendriya Vidyalaya,Sivaganga</p>
+            <p>Kendriya Vidyalaya, Sivaganga</p>
             <p>Percentage: 78%</p>
         </div>
     </section>
@@ -86,10 +183,10 @@
             <div class="skills-item">
                 <h3>Technical Skills</h3>
                 <ul>
-                    <li>Python (numpy,pandas)</li>
+                    <li>Python (numpy, pandas)</li>
                     <li>SQL</li>
                     <li>Excel</li>
-                    <li>Data visualisation</li>
+                    <li>Data visualization</li>
                     <li>Data warehousing</li>
                 </ul>
             </div>
@@ -111,115 +208,87 @@
                     <li>Teamwork</li>
                 </ul>
             </div>
-            
         </div>
     </section>
-    
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects-gallery">
             <div class="project-item">
                 <a href="https://github.com/Padmapriyasethuraman/Exploratory-data-analysis" target="_blank">
-                    <img src="C:\Users\Lenovo\Downloads\EDA.png" alt="Project 1">
-                    <p>Project 1: Exploratory Data Analysis:"Data cleaning and visualization of car attributes to explore correlations and identify trends in pricing and performance metrics."</p>
+                    <img src="images/EDA.png" alt="Project 1">
+                    <p>Project 1: Exploratory Data Analysis: "Data cleaning and visualization of car attributes to explore correlations and identify trends in pricing and performance metrics."</p>
                 </a>
             </div>
             <div class="project-item">
                 <a href="https://github.com/Padmapriyasethuraman/Web-scraping-Times-of-India-website" target="_blank">
-                    <img src="C:\Users\Lenovo\Downloads\webscrapy.png" alt="Project 2">
-                    <p>Project 2: Web Scraping:"Web scraping Tamil movie reviews from Times of India and exporting the data to an Excel file."</p>
+                    <img src="images/webscrapy.png" alt="Project 2">
+                    <p>Project 2: Web Scraping: "Web scraping Tamil movie reviews from Times of India and exporting the data to an Excel file."</p>
                 </a>
             </div>
             <div class="project-item">
                 <a href="https://github.com/Padmapriyasethuraman/A-B-testing-" target="_blank">
-                    <img src="C:\Users\Lenovo\Downloads\A b testing (2).png" alt="Project 3">
-                    <p>Project 3: A/B Testing:"Analyzed marketing data to assess conversion rates and ad impact using statistical tests and visualizations."</p>
+                    <img src="images/A b testing (2).png" alt="Project 3">
+                    <p>Project 3: A/B Testing: "Analyzed marketing data to assess conversion rates and ad impact using statistical tests and visualizations."</p>
                 </a>
             </div>
             <div class="project-item">
                 <a href="https://github.com/Padmapriyasethuraman/Customer-segmentation-of-mall" target="_blank">
-                    <img src="C:\Users\Lenovo\Downloads\clustering k means.png" alt="Project 4">
-                    <p>Project 4:Clustering of Mall Customers:"Performed K-means clustering on customer data to segment them based on annual income and spending score, visualizing the results with a scatter plot."</p>
+                    <img src="images/clustering k means.png" alt="Project 4">
+                    <p>Project 4: Clustering of Mall Customers: "Performed K-means clustering on customer data to segment them based on annual income and spending score, visualizing the results with a scatter plot."</p>
                 </a>
             </div>
             <div class="project-item">
                 <a href="https://github.com/Padmapriyasethuraman/Customer-analysis-using-Tableau" target="_blank">
-                    <img src="C:\Users\Lenovo\Downloads\Customer analysis tableau.png" alt="Project 5">
-                    <p>Project 5: Customer Analysis with Tableau:"Conducted customer segmentation and analysis using Tableau to visualize and interpret data insights effectively."</p>
+                    <img src="images/Customer analysis tableau.png" alt="Project 5">
+                    <p>Project 5: Customer Analysis with Tableau: "Conducted customer segmentation analysis using Tableau to identify key market segments and create targeted marketing strategies."</p>
                 </a>
             </div>
             <div class="project-item">
-                <a href="https://github.com/Padmapriyasethuraman/ETL" target="_blank">
-                    <img src="C:\Users\Lenovo\Downloads\ETL.png" alt="Project 6">
-                    <p>Project 6: ETL Pipeline for Currency and Expense Data:"Extracted, transformed, and loaded currency exchange rates and expense data into a SQL database.</p>
+                <a href="https://github.com/Padmapriyasethuraman/SQL" target="_blank">
+                    <img src="images/sql.png" alt="Project 6">
+                    <p>Project 6: SQL Data Analysis: "Analyzed a retail store database using complex SQL queries to derive business insights and report on key performance indicators."</p>
                 </a>
             </div>
         </div>
     </section>
+
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="certifications-gallery">
-            
-            <div class="certification-item">
-                <a href="https://www.credly.com/badges/ef61ebea-482a-43b3-b82f-962ef278ce40/public_url" target="_blank">
-                    <img src="C:\Users\Lenovo\Downloads\data analytics.png" alt="Certificate 2">
-                    <p>Certificate 1: Data analytics EssentialS |CISCO</p>
-                </a>
+            <div class="certifications-item">
+                <img src="images/sqlcerti.jpeg" alt="SQL Certificate">
+                <p>Certificate 1: SQL Certification</p>
             </div>
-            <div class="certification-item">
-                <a href="https://www.credly.com/badges/97940ba1-373f-4bc3-a926-d0d296b8b24e/public_url" target="_blank">
-                    <img src="C:\Users\Lenovo\Downloads\data science.png" alt="Certificate 3">
-                    <p>Certificate 2: Introduction to Data Science |CISCO</p>
-                </a>
+            <div class="certifications-item">
+                <img src="images/Tableau.jpg" alt="Tableau Certificate">
+                <p>Certificate 2: Tableau Certification</p>
             </div>
-            <div class="certification-item">
-                <a href="https://learn.microsoft.com/api/achievements/share/en-us/Padmapriyasethuraman-0214/PSJPTTX4?sharingId=6C8C27D0EB6EAFF4" target="_blank">
-                    <br>
-                    <img src="C:\Users\Lenovo\Downloads\microsoft.png" alt="Certificate 3" style="width: 360px; height: 360px;">
-                    <br>
-                
-                    <p>Certificate 3: Discover data analysis|Microsoft Learn</p>
-                </a>
+            <div class="certifications-item">
+                <img src="images/dataviz.png" alt="Data Visualization Certificate">
+                <p>Certificate 3: Data Visualization Certification</p>
             </div>
-            
+            <div class="certifications-item">
+                <img src="images/pandas.png" alt="Pandas Certificate">
+               
+           
            
         </div>
-    </section>    
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="fcca97d8-4eb3-4f8f-a902-c6ed3b9d22df">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
     </section>
 
-    <footer>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or want to connect, feel free to reach out!</p>
+        <p>Email: padmapriyasethu2003@gmail.com</p>
+        <p>Location: Madurai, Tamil Nadu</p>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/padmapriya-sethuraman" target="_blank">
-                <img src="C:\Users\Lenovo\Downloads\linkedin.png" alt="LinkedIn">
+            <a href="https://www.linkedin.com/in/padmapriya-sethuraman/" target="_blank">
+                <img src="images/Linkedin logo.png" alt="LinkedIn">
             </a>
             <a href="https://github.com/Padmapriyasethuraman" target="_blank">
-                <img src="C:\Users\Lenovo\Downloads\githubimg.png" alt="GitHub">
-            </a>
-            <a href="https://x.com/padhmapriya_s" target="_blank">
-                <img src="C:\Users\Lenovo\Downloads\X_logo.png" alt="X">
-            </a>
-            <a href="https://padmapriyasethu.blogspot.com/" target="_blank">
-                <img src="C:\Users\Lenovo\Downloads\blog.png" alt="Blog">
+                <img src="images/github.png" alt="GitHub">
             </a>
         </div>
-        
-        <p>&copy; 2024 PadmapriyaFolio</p>
-    </footer>
+    </section>
 </body>
 </html>
